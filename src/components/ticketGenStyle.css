@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,500,700,800&display=swap');
+
+body {
+    font-family: 'Inconsolata', sans-serif !important;
+}
+
+/*Background*/
+.cs-bg-image {
+    background: url('../assets/images/pattern-squiggly-line-bottom-desktop.svg') no-repeat bottom left,
+                url('../assets/images/pattern-squiggly-line-top.svg') no-repeat top right,
+                url('../assets/images/background-desktop.png') no-repeat center / 100% 100%;
+}
+
+/*Font*/
+.cs-tc-one {
+    color: hsl(252, 6%, 83%) !important;
+}
+
+.cs-fw-600 {
+    font-weight: 600 !important;
+}
