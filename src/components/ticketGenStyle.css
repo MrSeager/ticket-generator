@@ -4,6 +4,48 @@ body {
     font-family: 'Inconsolata', sans-serif !important;
 }
 
+.cs-transition {
+    transition: .5s !important;
+}
+
+.cs-pos {
+    left: 0 !important;
+    bottom: 0 !important;
+}
+
+.cs-d-grid {
+    display: grid;
+    grid-template-columns: 75% auto;
+}
+
+.cs-grid-item-one {
+    grid-row: span 2;
+}
+
+.cs-rotate {
+    transform: rotate(90deg);
+}
+
+.cs-ratio {
+    aspect-ratio: 2/1 !important;
+}
+
+.cs-w {
+    width: 1250px !important;
+}
+
+.cs-w-form {
+    width: 50% !important;
+}
+
+.cs-w-two {
+    width: 450px !important;
+}
+
+.cs-placeholder::placeholder {
+    color: hsl(252, 6%, 83%) !important;
+}
+
 /*Background*/
 .cs-bg-image {
     background: url('../assets/images/pattern-squiggly-line-bottom-desktop.svg') no-repeat bottom left,
@@ -15,9 +57,29 @@ body {
     background-color: rgba(255, 255, 255, 0.15) !important;
 }
 
+.cs-bg-frame {
+    background: url('../assets/images/pattern-ticket.svg') no-repeat center center / 100% 100%;
+}
+
 /*Font*/
 .cs-tc-one {
     color: hsl(252, 6%, 83%) !important;
+}
+
+.cs-tc-two {
+    color: hsl(7, 88%, 67%) !important;
+}
+
+.cs-tc-three {
+    color: hsl(245, 15%, 58%) !important;
+}
+
+.cs-tc-gradient {
+    background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%)); /* Your gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .cs-fw-500 {
@@ -55,4 +117,75 @@ body {
     box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
     -webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
     -moz-box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
+}
+
+.cs-hover {
+    position: relative;
+}
+
+.cs-hover:after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    top: -5px;
+    border: solid 2px transparent;
+    border-radius: 1.5rem;
+    transition: .5s;
+}
+
+.cs-hover:hover.cs-hover:after {
+    border: solid 2px hsl(252, 6%, 83%);
+}
+
+/*Form Control*/
+.cs-formcontrol {
+    border: solid 1px hsl(252, 6%, 83%) !important;
+    box-shadow: none !important;
+}
+
+.cs-hover-two {
+    position: relative;
+}
+
+.cs-hover-two:after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    top: -5px;
+    border: solid 2px transparent;
+    border-radius: .7rem;
+    transition: .5s;
+}
+
+.cs-hover-two:hover.cs-hover-two:after {
+    border: solid 2px hsl(252, 6%, 83%);
+}
+
+/*Image*/
+.cs-img {
+    max-height: 150px !important;
+}
+
+@media (max-width: 991px) {
+    .cs-w {
+        width: 100% !important;
+    }
+    
+    .cs-w-form {
+        width: 80% !important;
+    }
+
+    .cs-w-two {
+        width: 75% !important;
+    }
+
+    .cs-bg-image {
+        background: url('../assets/images/pattern-squiggly-line-bottom-desktop.svg') no-repeat bottom left,
+                    url('../assets/images/pattern-squiggly-line-top.svg') no-repeat top right,
+                    url('../assets/images/background-tablet.png') no-repeat center / 100% 100%;
+    }
 }
