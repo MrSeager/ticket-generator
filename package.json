@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://MrSeager.github.io/ticket-generator",
   "dependencies": {
-  "dependencies": {
     "@react-spring/types": "^9.7.5",
     "@react-spring/web": "^9.7.5",
     "@testing-library/jest-dom": "^5.14.1",
