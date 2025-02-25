@@ -41,9 +41,9 @@ const TicketResult: FC<TicketResultProps> = ({ email, uploadedImage, fullName, u
                     <Col xs={4} className='d-flex flex-column align-items-center justify-content-center'>
                         {imageSrc && <Image fluid src={imageSrc} alt='avatar' className='rounded rounded-3 w-75' />}
                     </Col>
-                    <Col xs={8} className='d-flex flex-column align-items-start justify-content-center'>
-                        <h2 className='h1 mb-1'>{fullName}</h2>
-                        <h3 className='mb-1 cs-tc-one h4 d-flex flex-row align-items-center'><FaGithubSquare className='me-2'/> @{userName}</h3>
+                    <Col xs={8} className='p-0 d-flex flex-column align-items-start justify-content-center'>
+                        <h2 className='text-start h4 mb-1 w-100'>{fullName}</h2>
+                        <h3 className='mb-1 cs-tc-one h6 d-flex flex-row align-items-center'><FaGithubSquare className='me-2'/> @{userName}</h3>
                     </Col>
                 </Row>
             </Container>

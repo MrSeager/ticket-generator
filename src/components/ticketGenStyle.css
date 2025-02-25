@@ -10,7 +10,7 @@ body {
 
 .cs-pos {
     left: 0 !important;
-    bottom: 0 !important;
+    bottom: -23px !important;
 }
 
 .cs-d-grid {

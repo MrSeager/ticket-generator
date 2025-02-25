@@ -81,8 +81,8 @@ const TicketForm: FC<TicketFormProps> = ({ validated, setValidated, uploadedImag
                             onChange={handleInputChange}
                             className='cs-bg-white-transparent cs-tc-one rounded-3 py-2 cs-formcontrol'
                         />
+                        <Form.Control.Feedback type="invalid" className='m-0 position-absolute cs-pos'><PiWarningCircleLight /> Please enter the name.</Form.Control.Feedback>
                     </span>
-                    <Form.Control.Feedback type="invalid" className='m-0 position-absolute cs-pos'><PiWarningCircleLight /> Please enter the name.</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group controlId="validationCustom01" className='d-flex flex-column gap-2 position-relative pb-4'>
                     <Form.Label className='m-0 h5'>Email Address</Form.Label>
@@ -96,10 +96,10 @@ const TicketForm: FC<TicketFormProps> = ({ validated, setValidated, uploadedImag
                             onChange={handleInputChange}
                             className='cs-bg-white-transparent cs-tc-one rounded-3 py-2 cs-placeholder cs-formcontrol'
                         />
+                        <Form.Control.Feedback type="invalid" className='m-0 position-absolute cs-pos'><PiWarningCircleLight /> Please enter a valid email address.</Form.Control.Feedback>
                     </span>
-                    <Form.Control.Feedback type="invalid" className='m-0 position-absolute cs-pos'><PiWarningCircleLight /> Please enter a valid email address.</Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group controlId="validationCustom01" className='d-flex flex-column gap-2 position-relative pb-4'>
+                <Form.Group controlId="validationCustom01" className='d-flex flex-column gap-2 pb-4 position-relative'>
                     <Form.Label className='m-0 h5'>GitHub Username</Form.Label>
                     <span className='cs-hover-two rounded-3'>
                         <Form.Control
@@ -111,8 +111,8 @@ const TicketForm: FC<TicketFormProps> = ({ validated, setValidated, uploadedImag
                             onChange={handleInputChange}
                             className='cs-bg-white-transparent cs-tc-one rounded-3 py-2 cs-placeholder cs-formcontrol'
                         />
+                        <Form.Control.Feedback type="invalid" className='m-0 position-absolute cs-pos'><PiWarningCircleLight /> Please enter username.</Form.Control.Feedback>
                     </span>
-                    <Form.Control.Feedback type="invalid" className='m-0 position-absolute cs-pos'><PiWarningCircleLight /> Please enter username.</Form.Control.Feedback>
                 </Form.Group>
                 <Button type="submit" className='w-100 cs-btn py-2 cs-fw-800 rounded-3 fs-5'>Generate My Ticket</Button>
             </Form> 
