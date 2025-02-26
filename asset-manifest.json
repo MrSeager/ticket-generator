@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ticket-generator/static/css/main.5faf39f8.css",
-    "main.js": "/ticket-generator/static/js/main.2a66eeaa.js",
+    "main.css": "/ticket-generator/static/css/main.7d3ed151.css",
+    "main.js": "/ticket-generator/static/js/main.9cfca31b.js",
     "static/js/453.08e6a28b.chunk.js": "/ticket-generator/static/js/453.08e6a28b.chunk.js",
     "static/media/background-desktop.png": "/ticket-generator/static/media/background-desktop.aaca402b029d6080d68d.png",
     "static/media/background-tablet.png": "/ticket-generator/static/media/background-tablet.57cc8cedb90045e863ce.png",
@@ -11,12 +11,12 @@
     "static/media/pattern-squiggly-line-bottom-desktop.svg": "/ticket-generator/static/media/pattern-squiggly-line-bottom-desktop.02c2143a87694e5503a4.svg",
     "static/media/icon-upload.svg": "/ticket-generator/static/media/icon-upload.860d7f0ca71820579c142f900d7b81db.svg",
     "index.html": "/ticket-generator/index.html",
-    "main.5faf39f8.css.map": "/ticket-generator/static/css/main.5faf39f8.css.map",
-    "main.2a66eeaa.js.map": "/ticket-generator/static/js/main.2a66eeaa.js.map",
+    "main.7d3ed151.css.map": "/ticket-generator/static/css/main.7d3ed151.css.map",
+    "main.9cfca31b.js.map": "/ticket-generator/static/js/main.9cfca31b.js.map",
     "453.08e6a28b.chunk.js.map": "/ticket-generator/static/js/453.08e6a28b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5faf39f8.css",
-    "static/js/main.2a66eeaa.js"
+    "static/css/main.7d3ed151.css",
+    "static/js/main.9cfca31b.js"
   ]
 }
