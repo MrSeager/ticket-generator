@@ -30,15 +30,11 @@ body {
     aspect-ratio: 2/1 !important;
 }
 
-.cs-w {
-    width: 1250px !important;
-}
-
 .cs-w-form {
-    width: 50% !important;
+    width: 750px !important;
 }
 
-.cs-w-two {
+.cs-w-ticket {
     width: 450px !important;
 }
 
@@ -149,7 +145,7 @@ body {
     position: relative;
 }
 
-.cs-hover-two:after {
+.cs-hover-two::before {
     content: '';
     position: absolute;
     left: -5px;
@@ -159,9 +155,10 @@ body {
     border: solid 2px transparent;
     border-radius: .7rem;
     transition: .5s;
+    pointer-events: none;
 }
 
-.cs-hover-two:hover.cs-hover-two:after {
+.cs-hover-two:hover.cs-hover-two::before {
     border: solid 2px hsl(252, 6%, 83%);
 }
 
@@ -170,16 +167,12 @@ body {
     max-height: 150px !important;
 }
 
-@media (max-width: 991px) {
-    .cs-w {
-        width: 100% !important;
-    }
-    
+@media (max-width: 991px) { 
     .cs-w-form {
         width: 80% !important;
     }
 
-    .cs-w-two {
+    .cs-w-ticket {
         width: 75% !important;
     }
 
@@ -187,5 +180,11 @@ body {
         background: url('../assets/images/pattern-squiggly-line-bottom-desktop.svg') no-repeat bottom left,
                     url('../assets/images/pattern-squiggly-line-top.svg') no-repeat top right,
                     url('../assets/images/background-tablet.png') no-repeat center / 100% 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .cs-w-ticket {
+        width: 100% !important;
     }
 }

@@ -27,29 +27,6 @@ const TicketGen: FC = () => {
     return (
         <Container fluid className='cs-bg-image min-vh-100 d-flex flex-column align-items-center justify-content-center gap-3 py-5 overflow-hidden'>
             <Image fluid src={LogoImg} alt='logo' className='mb-4' />
-            {/*!formSubmitted ? (
-                <animated.div className='w-100'>
-                    <TicketForm 
-                        validated={validated}
-                        setValidated={setValidated} 
-                        uploadedImage={uploadedImage} 
-                        setUploadedImage={setUploadedImage} 
-                        formValues={formValues} 
-                        setFormValues={setFormValues}
-                        setFormSubmitted={setFormSubmitted}
-                    />
-                </animated.div>
-            ) : (
-                <animated.div className='w-100'>
-                    <TicketResult 
-                        email={formValues.email}
-                        uploadedImage={uploadedImage}
-                        fullName={formValues.fullName}
-                        userName={formValues.userName}
-                        LogoImg={LogoImg}
-                    />
-                </animated.div>
-            )*/}
             {formTransition((style, item) =>
                 item ? (
                     <animated.div style={style} className='w-100'>

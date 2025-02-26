@@ -59,7 +59,7 @@ const TicketForm: FC<TicketFormProps> = ({ validated, setValidated, uploadedImag
 
 
     return (
-        <Container fluid className='cs-w text-white p-0'>
+        <Container fluid className='text-white p-0'>
             <h1 className='display-3 text-center text-white cs-fw-600'>Your Journey to Coding Conf<br /> 2025 Starts Here!</h1>
             <p className='cs-tc-one text-center'>Secure your spot at next year's biggest coding conference.</p>
             <Form noValidate validated={validated} onSubmit={handleSubmit} className='d-flex flex-column gap-1 cs-w-form mx-auto'>
@@ -70,9 +70,9 @@ const TicketForm: FC<TicketFormProps> = ({ validated, setValidated, uploadedImag
                     <p className='text-center cs-tc-one'>Drag and drop or click to upload</p>
                 </Container>
                 <p className={`cs-transition ${validated && uploadedImage === null ? 'text-danger' : 'cs-tc-one'}`}><PiWarningCircleLight /> Upload your photo (JPG or PNG, max size: 500KB).</p>
-                <Form.Group controlId="validationCustom01" className='d-flex flex-column gap-2 position-relative pb-4'>
+                <Form.Group controlId="validationCustom01" className=' position-relative d-flex flex-column gap-2 pb-4'>
                     <Form.Label className='m-0 h5'>Full Name</Form.Label>
-                    <span className='cs-hover-two rounded-3'>
+                    <span className='cs-hover-two'>
                         <Form.Control
                             required
                             type='text'
@@ -86,7 +86,7 @@ const TicketForm: FC<TicketFormProps> = ({ validated, setValidated, uploadedImag
                 </Form.Group>
                 <Form.Group controlId="validationCustom01" className='d-flex flex-column gap-2 position-relative pb-4'>
                     <Form.Label className='m-0 h5'>Email Address</Form.Label>
-                    <span className='cs-hover-two rounded-3'>
+                    <span className='cs-hover-two'>
                         <Form.Control
                             required
                             type='email'
@@ -101,7 +101,7 @@ const TicketForm: FC<TicketFormProps> = ({ validated, setValidated, uploadedImag
                 </Form.Group>
                 <Form.Group controlId="validationCustom01" className='d-flex flex-column gap-2 pb-4 position-relative'>
                     <Form.Label className='m-0 h5'>GitHub Username</Form.Label>
-                    <span className='cs-hover-two rounded-3'>
+                    <span className='cs-hover-two'>
                         <Form.Control
                             required
                             type='text'

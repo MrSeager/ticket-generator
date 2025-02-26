@@ -29,7 +29,7 @@ const TicketResult: FC<TicketResultProps> = ({ email, uploadedImage, fullName, u
         <Container fluid className='text-white text-center d-flex flex-column align-items-center'>
             <h2 className='cs-w display-3 cs-fw-800'>Congrats, <span className='cs-tc-gradient'>{fullName}!</span> <br />Your ticket is ready.</h2>
             <p className='cs-tc-one'>We've emailed your ticket to <span className='cs-tc-two'>{email}</span> and will send updates in the run up to the event.</p>
-            <Container className='cs-w-two cs-d-grid p-0 cs-bg-frame cs-ratio'>
+            <Container className='cs-w-ticket cs-d-grid p-0 cs-bg-frame cs-ratio'>
                 <Container className='ps-4 ms-0 mx-3 d-flex flex-column align-items-start justify-content-center'>
                     <Image fluid src={LogoImg} alt='logo' className='w-75' />
                     <p className='ps-5 m-0 cs-tc-one'>Jan 31, 2025 / Austin, TX</p>
